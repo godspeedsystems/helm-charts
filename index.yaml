@@ -3,12 +3,12 @@ entries:
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-28T20:00:08.092087+05:30"
+    created: "2023-08-28T20:48:59.554295+05:30"
     description: A Helm chart for Kubernetes
     digest: 6aa044a34a378924434e561cc7d38431f55b3134b147d6259093453c293b032d
     name: test-chart
     type: application
     urls:
-    - https://godspeed.github.io/helm-chart/test-chart-0.1.0.tgz
+    - https://godspeed.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-28T20:00:08.090058+05:30"
+generated: "2023-08-28T20:48:59.552928+05:30"
