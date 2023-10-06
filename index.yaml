@@ -65,6 +65,44 @@ entries:
     urls:
     - https://github.com/godspeedsystems/helm-charts/releases/download/argo-cd-2.8.0/argo-cd-2.8.0.tgz
     version: 2.8.0
+  grafana:
+  - annotations:
+      artifacthub.io/license: AGPL-3.0-only
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/grafana/helm-charts
+        - name: Upstream Project
+          url: https://github.com/grafana/grafana
+    apiVersion: v2
+    appVersion: 10.1.1
+    created: "2023-10-06T10:57:11.740191042Z"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: 055f0aa1e552d57f6899e3403ce6a2f05635d8b317501316aad1b9c74035dc6b
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    keywords:
+    - monitoring
+    - metric
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    - https://github.com/grafana/helm-charts
+    type: application
+    urls:
+    - https://github.com/godspeedsystems/helm-charts/releases/download/grafana-6.59.4/grafana-6.59.4.tgz
+    version: 6.59.4
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -76,4 +114,4 @@ entries:
     urls:
     - https://godspeedsystems.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-20T13:42:02.525543253Z"
+generated: "2023-10-06T10:57:11.740204142Z"
