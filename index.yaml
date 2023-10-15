@@ -140,6 +140,30 @@ entries:
     urls:
     - https://github.com/godspeedsystems/helm-charts/releases/download/grafana-6.59.4/grafana-6.59.4.tgz
     version: 6.59.4
+  ingress-nginx:
+  - annotations:
+      artifacthub.io/changes: |-
+        - "update nginx base, httpbun, e2e, helm webhook cert gen (#10506)"
+        - "Update Ingress-Nginx version controller-v1.9.3"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.9.3
+    created: "2023-10-15T09:00:47.862957097Z"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: 337cab3db70049821d9caebc1f14074931d976a18ad2f4d2729319e5f476679f
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.20.0-0'
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/godspeedsystems/helm-charts/releases/download/ingress-nginx-1.9.3/ingress-nginx-1.9.3.tgz
+    version: 1.9.3
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -151,4 +175,4 @@ entries:
     urls:
     - https://godspeedsystems.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-06T10:58:33.791636813Z"
+generated: "2023-10-15T09:00:47.863043399Z"
