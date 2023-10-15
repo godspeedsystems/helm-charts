@@ -14,17 +14,6 @@ keywords:
 - monitoring
 - metric
 kubeVersion: ^1.8.0-0
-maintainers:
-- email: zanhsieh@gmail.com
-  name: zanhsieh
-- email: rluckie@cisco.com
-  name: rtluckie
-- email: maor.friedman@redhat.com
-  name: maorfr
-- email: miroslav.hadzhiev@gmail.com
-  name: Xtigyro
-- email: mail@torstenwalter.de
-  name: torstenwalter
 name: grafana
 sources:
 - https://github.com/grafana/grafana
