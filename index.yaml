@@ -208,6 +208,50 @@ entries:
     urls:
     - https://github.com/godspeedsystems/helm-charts/releases/download/kube-prometheus-stack-v0.68.0/kube-prometheus-stack-v0.68.0.tgz
     version: v0.68.0
+  prometheus:
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: v0.68.0
+    created: "2023-10-27T05:50:32.376805432Z"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.0.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.14.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.23.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 35fa1b13c0c8e264551522018cb424bc506eb516e14ff03da9df3f283fa76ca0
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://github.com/godspeedsystems/helm-charts/releases/download/prometheus-v0.68.0/prometheus-v0.68.0.tgz
+    version: v0.68.0
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -219,4 +263,4 @@ entries:
     urls:
     - https://godspeedsystems.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-27T05:40:18.461661935Z"
+generated: "2023-10-27T05:50:32.376824632Z"
