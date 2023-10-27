@@ -31,7 +31,7 @@ keywords:
 - prometheus
 - kube-prometheus
 kubeVersion: '>=1.19.0-0'
-name: kube-prometheus-stack
+name: prometheus
 sources:
 - https://github.com/prometheus-community/helm-charts
 - https://github.com/prometheus-operator/kube-prometheus
